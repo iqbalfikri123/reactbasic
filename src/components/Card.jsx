@@ -9,6 +9,9 @@ const Card = (props)=>{
 			<p>
 				{props.content || 'Content belum di isi'}
 			</p>
+			<small className='date'>
+				{props.date || 'now'}
+			</small>
 		</div>
 	)
 	

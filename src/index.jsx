@@ -1,6 +1,30 @@
 
 // MEMBUAT FUNC COMPONEN REACT
 const App = ()=>{
+
+	const waktu = new Date().toLocaleDateString()
+	const DummyData = [
+		{
+			id : 1,
+			judul : 'ini note pertama',
+			content : 'ini content saya ..',
+			date : waktu
+		},
+		{
+			id : 2,
+			judul : 'ini note kedua',
+			content : 'ini content saya ..',
+			date : waktu
+		},
+		{
+			id : 3,
+			judul : 'ini note ketiga',
+			content : 'ini content saya ..',
+			date : waktu
+		}
+	]
+
+
 	return(
 		<>
 		<div className="navbar">
@@ -16,10 +40,13 @@ const App = ()=>{
 		</div>
 
 		<div className="container">
-			<Card judul='Card Pertama' content='lorem'/>
-			<Card judul='Card Kedua' content='lorem kedua'/>
-			<Card />
-			<Card />
+			
+			{DummyData.map((e)=>{
+				return(
+					<Card key={e.id} judul={e.judul} content={e.content} date={e.date} />
+				)
+			})}
+
 		</div>
 
 
