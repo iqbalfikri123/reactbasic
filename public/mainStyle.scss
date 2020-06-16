@@ -25,6 +25,7 @@ body{
 	// BRAND
 	.brand{
 		color: #000000;
+		transition-duration: .2s;
 		&:hover{
 			color: #ff4500;
 		}
@@ -56,10 +57,22 @@ body{
 	height: auto;
 	min-height: 100vh;
 	padding: 40px 10%;
-	// display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	margin-top: 9vh;
+	justify-content: space-between;
 	// border: 1px solid black;
+	.card{
+		width: 30%;
+		height: 300px;
+		border: .3px solid #bebebe;
+		padding: 0px 20px;
+		border-radius: 8px;
+		transition-duration: .5s;
+		&:hover{
+			box-shadow: 3px 3px 5px #bebebe;
+		}
+	}
 }
 .footer{
 	width: 100vw;

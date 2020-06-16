@@ -34,6 +34,8 @@ body {
 
 .navbar .brand {
   color: #000000;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 .navbar .brand:hover {
@@ -73,9 +75,30 @@ body {
   height: auto;
   min-height: 100vh;
   padding: 40px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 9vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .card {
+  width: 30%;
+  height: 300px;
+  border: .3px solid #bebebe;
+  padding: 0px 20px;
+  border-radius: 8px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.container .card:hover {
+  -webkit-box-shadow: 3px 3px 5px #bebebe;
+          box-shadow: 3px 3px 5px #bebebe;
 }
 
 .footer {

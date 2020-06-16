@@ -3,11 +3,11 @@
 const App = ()=>{
 
 	const waktu = new Date().toLocaleDateString()
-	const DummyData = [
+	const DummyNote = [
 		{
 			id : 1,
 			judul : 'ini note pertama',
-			content : 'ini content saya ..',
+			content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus asperiores odit iusto excepturi? Tempore molestias voluptas aut delectus similique neque, saepe, porro distinctio exercitationem quo eius inventore? Totam, sit?',
 			date : waktu
 		},
 		{
@@ -41,7 +41,7 @@ const App = ()=>{
 
 		<div className="container">
 			
-			{DummyData.map((e)=>{
+			{DummyNote.map((e)=>{
 				return(
 					<Card key={e.id} judul={e.judul} content={e.content} date={e.date} />
 				)
