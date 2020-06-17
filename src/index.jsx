@@ -29,21 +29,28 @@ const App = ()=>{
 			id: 1,
 			menuName: 'Home',
 			to : '#',
+			color : '#48C9B0',
 		},
 		{
 			id: 2,
 			menuName: 'About',
 			to : '#',
+			color : '#229954',
+
 		},
 		{
 			id: 3,
 			menuName: 'Contact',
 			to : '#',
+			color : '#1ABC9C',
+
 		},
 		{
 			id: 4,
 			menuName: 'Gallery',
 			to : '#',
+			color : '#138D75',
+
 		}
 
 	]
@@ -58,7 +65,7 @@ const App = ()=>{
 			<div className="menu">
 				{menu.map((e)=>{
 					return(
-					<a href={e.to} key={e.id}>{e.menuName}</a>
+					<Menuitem menuName={e.menuName} to={e.to} color={e.color} key={e.id} />
 					)
 				})}
 			</div>
