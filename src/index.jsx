@@ -24,6 +24,30 @@ const App = ()=>{
 		}
 	]
 
+	const menu = [
+		{
+			id: 1,
+			menuName: 'Home',
+			to : '#',
+		},
+		{
+			id: 2,
+			menuName: 'About',
+			to : '#',
+		},
+		{
+			id: 3,
+			menuName: 'Contact',
+			to : '#',
+		},
+		{
+			id: 4,
+			menuName: 'Gallery',
+			to : '#',
+		}
+
+	]
+
 
 	return(
 		<>
@@ -32,10 +56,11 @@ const App = ()=>{
 				Jvalley
 			</h1>
 			<div className="menu">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
-				<a href="#">Gallery</a>
+				{menu.map((e)=>{
+					return(
+					<a href={e.to} key={e.id}>{e.menuName}</a>
+					)
+				})}
 			</div>
 		</div>
 
