@@ -9,18 +9,21 @@ const App = ()=>{
 			judul : 'ini note pertama',
 			content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus asperiores odit iusto excepturi? Tempore molestias voluptas aut delectus similique neque, saepe, porro distinctio exercitationem quo eius inventore? Totam, sit?',
 			date : waktu
+			
 		},
 		{
 			id : 2,
 			judul : 'ini note kedua',
 			content : 'ini content saya ..',
 			date : waktu
+			
 		},
 		{
 			id : 3,
 			judul : 'ini note ketiga',
 			content : 'ini content saya ..',
 			date : waktu
+			
 		}
 	]
 
@@ -75,7 +78,7 @@ const App = ()=>{
 			
 			{DummyNote.map((e)=>{
 				return(
-					<Card key={e.id} judul={e.judul} content={e.content} date={e.date} />
+					<Card key={e.id} judul={e.judul} content={e.content} date={e.date}  />
 				)
 			})}
 
