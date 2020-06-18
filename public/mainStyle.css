@@ -30,44 +30,18 @@ body {
   background-color: #bebebe;
   position: fixed;
   top: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c21500), color-stop(51%, #ffc500), to(#c21500));
+  background-image: linear-gradient(to right, #c21500 0%, #ffc500 51%, #c21500 100%);
 }
 
 .navbar .brand {
-  color: #000000;
+  color: #fff;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
 
 .navbar .brand:hover {
-  color: #ff4500;
-}
-
-.navbar .menu {
-  width: 40%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  margin-left: auto;
-}
-
-.navbar .menu a {
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-
-.navbar .menu a:hover {
-  color: #000;
-  font-size: 1.2rem;
+  color: #bebebe;
 }
 
 .container {
@@ -88,17 +62,87 @@ body {
 
 .container .card {
   width: 30%;
-  height: 300px;
-  border: .3px solid #bebebe;
+  height: 240px;
   padding: 0px 20px;
-  border-radius: 8px;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
+  border: .3px solid #bebebe;
+  border-radius: 8px;
 }
 
 .container .card:hover {
   -webkit-box-shadow: 3px 3px 5px #bebebe;
           box-shadow: 3px 3px 5px #bebebe;
+}
+
+.container .noteInput {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: .3px solid #bebebe;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 90;
+  background-color: #fff;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.container .noteInput .arrow {
+  margin-left: auto;
+  margin-top: -10px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #bebebe;
+  cursor: pointer;
+}
+
+.container .noteInput .arrow:hover {
+  color: orangered;
+}
+
+.container .noteInput .formGroup {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0px;
+}
+
+.container .noteInput .formGroup input, .container .noteInput .formGroup textarea {
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: #f8f8ff;
+}
+
+.container .noteInput .formGroup button {
+  padding: 10px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe8c00), color-stop(51%, #f83600), to(#fe8c00));
+  background-image: linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.container .noteInput .formGroup button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #fe8c00), color-stop(51%, #f83600), color-stop(0%, #fe8c00));
+  background-image: linear-gradient(to right, #fe8c00 100%, #f83600 51%, #fe8c00 0%);
 }
 
 .footer {
@@ -114,5 +158,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #bebebe;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fe8c00), color-stop(51%, #f83600), to(#fe8c00));
+  background-image: linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%);
+  color: #fff;
 }
 /*# sourceMappingURL=mainStyle.css.map */

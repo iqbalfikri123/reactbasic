@@ -1,26 +1,26 @@
 
-const Menuitem = (props)=>{
-	// MEMBUAT SEBUAH INITIAL STATE
-	const [click, setClick] = React.useState( false )
+// const Menuitem = (props)=>{
+// 	// MEMBUAT SEBUAH INITIAL STATE
+// 	const [click, setClick] = React.useState( false )
 
-	const [tc, setTc] = React.useState(0) 
+// 	const [tc, setTc] = React.useState(0) 
 
-	return(
-		<div className="menuItem" style={{
-			width : '120px',
-			height : '100%',
-			// padding : '0px 10px',
-			display : 'flex',
-			justifyContent : 'center',
-			alignItems : 'center',
-			backgroundColor : click ? `${props.color}` : '#bebebe'
-		}} onClick={()=>{
-			setClick (!click)
-			setTc(tc + 1)
-		} }>
-			<a href={props.to}>
-				{props.menuName} {tc}
-			</a>
-		</div>
-	)
-}
+// 	return(
+// 		<div className="menuItem" style={{
+// 			width : '120px',
+// 			height : '100%',
+// 			// padding : '0px 10px',
+// 			display : 'flex',
+// 			justifyContent : 'center',
+// 			alignItems : 'center',
+// 			backgroundColor : click ? `${props.color}` : '#bebebe'
+// 		}} onClick={()=>{
+// 			setClick (!click)
+// 			setTc(tc + 1)
+// 		} }>
+// 			<a href={props.to}>
+// 				{props.menuName} {tc}
+// 			</a>
+// 		</div>
+// 	)
+// }

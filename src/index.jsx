@@ -3,78 +3,44 @@
 const App = ()=>{
 
 	const waktu = new Date().toLocaleDateString()
-	const DummyNote = [
+	const [DummyNote, setDummyNote] = React.useState([
 		{
 			id : 1,
-			judul : 'ini note pertama',
-			content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus asperiores odit iusto excepturi? Tempore molestias voluptas aut delectus similique neque, saepe, porro distinctio exercitationem quo eius inventore? Totam, sit?',
+			title : 'Ini note pertama',
+			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id delectus minima tenetur adipisci. Ab odio aspernatur nesciunt necessitatibus voluptas quas voluptates error rem ullam, cum obcaecati totam perspiciatis optio.',
 			date : waktu
-			
 		},
 		{
 			id : 2,
-			judul : 'ini note kedua',
-			content : 'ini content saya ..',
+			title : 'Ini note pertama',
+			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id delectus minima tenetur adipisci. Ab odio aspernatur nesciunt necessitatibus voluptas quas voluptates error rem ullam, cum obcaecati totam perspiciatis optio.',
 			date : waktu
-			
 		},
 		{
 			id : 3,
-			judul : 'ini note ketiga',
-			content : 'ini content saya ..',
+			title : 'Ini note pertama',
+			content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam id delectus minima tenetur adipisci. Ab odio aspernatur nesciunt necessitatibus voluptas quas voluptates error rem ullam, cum obcaecati totam perspiciatis optio.',
 			date : waktu
-			
 		}
-	]
+	])
 
-	const menu = [
-		{
-			id: 1,
-			menuName: 'Home',
-			to : '#',
-			color : '#48C9B0',
-		},
-		{
-			id: 2,
-			menuName: 'About',
-			to : '#',
-			color : '#229954',
-
-		},
-		{
-			id: 3,
-			menuName: 'Contact',
-			to : '#',
-			color : '#1ABC9C',
-
-		},
-		{
-			id: 4,
-			menuName: 'Gallery',
-			to : '#',
-			color : '#138D75',
-
-		}
-
-	]
 
 
 	return(
 		<>
-		<div className="navbar">
+		<div className="navbar" style={{
+			zIndex : '99'
+		}}>
 			<h1 className="brand">
 				Jvalley
 			</h1>
-			<div className="menu">
-				{menu.map((e)=>{
-					return(
-					<Menuitem menuName={e.menuName} to={e.to} color={e.color} key={e.id} />
-					)
-				})}
-			</div>
+
+			
 		</div>
 
 		<div className="container">
+
+			<NoteInput />
 			
 			{DummyNote.map((e)=>{
 				return(

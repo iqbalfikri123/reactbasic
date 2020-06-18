@@ -21,34 +21,13 @@ body{
 	background-color: #bebebe;
 	position: fixed;
 	top: 0;
-
+	background-image: linear-gradient(to right, #c21500 0%, #ffc500 51%, #c21500 100%);
 	// BRAND
 	.brand{
-		color: #000000;
+		color: #fff;
 		transition-duration: .2s;
 		&:hover{
-			color: #ff4500;
-		}
-	}
-
-	// MENU
-	.menu{
-		width: 40%;
-		height: 100%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		transition-duration: 0.2s;
-		margin-left: auto;
-
-		a{
-			text-decoration: none;
-			color: #fff;
-			transition-duration: 0.2s;
-			&:hover{
-				color: #000;
-				font-size: 1.2rem;
-			}
+			color: #bebebe;
 		}
 	}
 }
@@ -64,13 +43,72 @@ body{
 	// border: 1px solid black;
 	.card{
 		width: 30%;
-		height: 300px;
-		border: .3px solid #bebebe;
+		height: 240px;
 		padding: 0px 20px;
-		border-radius: 8px;
 		transition-duration: .5s;
+		border: .3px solid #bebebe;
+		border-radius: 8px;
 		&:hover{
 			box-shadow: 3px 3px 5px #bebebe;
+			
+		}
+	}
+	.noteInput{
+		width: 300px;
+		height: auto;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		border: .3px solid #bebebe;
+		border-radius: 8px;
+		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.300);
+		position: fixed;
+		z-index: 90;
+		background-color: #fff;
+		transition-duration: .5s;
+
+
+		.arrow{
+			margin-left: auto;
+			margin-top: -10px;
+			// transform: rotate(-90deg);
+			transition-duration: .5s;
+			color: #bebebe;
+			cursor: pointer;
+
+			&:hover{
+				color: orangered;
+			}
+		}
+
+		.formGroup{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			padding: 10px 0px;
+
+		
+
+			input, textarea{
+				padding: 5px;
+				margin-top: 10px;
+				border: none;
+				outline: none;
+				background-color: #f8f8ff;
+			}
+
+			button{
+				padding: 10px;
+				border: none;
+				background-image: linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%);
+				transition-duration: .2s;
+				&:hover{
+					background-image: linear-gradient(to right, #fe8c00 100%, #f83600 51%, #fe8c00 0%)
+				}
+
+			}
+
 		}
 	}
 }
@@ -81,5 +119,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-color: #bebebe;
+	background-image: linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%);
+	color: #fff;
 }
 
